@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Learning Guide" />
+
+  <Content type="html" view="home">
+
+    <![CDATA[     
+       
+     <style type="text/css">
+		
+		body {font-family: Arial, Helvetica, Sans-serif;}
+	 
+        .imgBox
+        {
+            width: 130px;
+            height: 90px;
+        }
+        
+        .imgBox:hover {  border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+             -webkit-box-shadow: 1px 1px 5px #999;
+             box-shadow: 1px 1px 5px #999;}   
+             
+        .outerTable
+        {
+            border: 1px solid black;          
+            width: 40%;                    
+            height:250px;
+        }
+
+        .hrln
+        {
+            height: 1.5px; 
+            border: none; 
+            color: #333; 
+            background-color: #333;
+        }
+    </style>
+
+    <table class="outerTable" align="center">
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td width="40%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="20%">
+                            <span style="font-size:13pt">Guided Learning</span>
+                        </td>
+                        <td width="40%">
+                            <hr class="hrln"  />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td valign="top"><img  src="/01/01.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/02/02.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/03/03.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/04/04.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/05/05.jpg" class="imgBox" /></td>
+                    </tr>
+                    <tr>
+						<td valign="top"><img  src="/06/06.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/07/07.jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/08/08jpg" class="imgBox" /></td>
+						<td valign="top"><img  src="/09/09.jpg" class="imgBox" /></td>
+                        <td valign="top">
+                            <div class="imgBox" align="right">
+                                <br />
+                                <table width="100%">
+                                    <tr>
+                                        <td width="22%" align="center">
+                                           <span style="font-size:9pt">Browse All
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" width="78%">
+                                            <span style="font-size:9pt">Learning Guides
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+
+    ]]>
+
+    
+    
+  </Content>
+  <Content type="html" view="canvas">
+    <![CDATA[    
+       
+     
+     <style type="text/css">
+        .imgBox
+        {
+            width: 130px;
+            height: 90px;
+        }
+        
+          .imgBox:hover {  border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+             -webkit-box-shadow: 1px 1px 5px #999;
+             box-shadow: 1px 1px 5px #999;} 
+        
+        .maintable
+        {
+            border: 1px solid black;          
+            width: 40%;                    
+            height:250px;
+        }
+      
+        .fontfamily
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 13pt;
+        }
+        .fontfamily2
+        {
+            font-family: arial, helvetica, sans-serif;
+            font-size: 9pt;
+        }
+        .hrln
+        {
+            height: 1.5px; 
+            border: none; 
+            color: #333; 
+            background-color: #333;
+        }
+    </style>
+   
+    <table class="maintable" align="center">
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td width="40%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="20%" class="fontfamily">
+                            Guided Learning
+                        </td>
+                        <td width="40%">
+                            <hr class="hrln"  />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td valign="top">
+                            <img  src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/Azure.png"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/Aws.png"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/VmWare.png"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/JavaScript.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/Hadoop.png"
+                                class="imgBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/Python.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/SQL.png"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/DevOps.jpg"
+                                class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <img src="https://raw.githubusercontent.com/cadriosula/poc/master/learningguide/ScrumAgile.jpg" class="imgBox" />
+                        </td>
+                        <td valign="top">
+                            <div class="imgBox" align="right">
+                                <br />
+                                <table width="100%">
+                                    <tr>
+                                        <td class="fontfamily2" width="22%" align="center">
+                                           Browse All
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="fontfamily2" width="78%">
+                                            Learning Guides
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+
+     ]]>
+  </Content>
+</Module>
+
+
