@@ -55,7 +55,7 @@
                 </table>
                 <table>
                     <tr>
-                        <td valign="top"><img  src="/poc-org/hrit/test/learning_guide/images/01.jpg" class="imgBox" /></td>
+                        <td valign="top"><a href="../01/01.html" target="_blank"><img  src="../images/01.jpg" class="imgBox" /></a></td>
 			<td valign="top"><img  src="/poc-org/hrit/test/learning_guide/images/02.jpg" class="imgBox" /></td>
 			<td valign="top"><img  src="/poc-org/hrit/test/learning_guide/images/03.jpg" class="imgBox" /></td>
 			<td valign="top"><img  src="/poc-org/hrit/test/learning_guide/images/04.jpg" class="imgBox" /></td>
