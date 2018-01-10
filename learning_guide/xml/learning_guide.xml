@@ -56,17 +56,17 @@
                 </table>
                 <table>
                     <tr>
-                        <td valign="top"><a href="{{carname}}/01/01.html" target="_blank"><img  src="../images/01.jpg" class="imgBox" /></a></td>
-			<td valign="top"><img  src="../images/02.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/03.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/04.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/05.jpg" class="imgBox" /></td>
+                        <td valign="top"><a href="{{url_home}}/01/01.html" target="_blank"><img  src="../images/01.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/02/02.html" target="_blank"><img  src="../images/02.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/03/03.html" target="_blank"><img  src="../images/03.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/04/04.html" target="_blank"><img  src="../images/04.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/05/05.html" target="_blank"><img  src="../images/05.jpg" class="imgBox" /></a></td>
                     </tr>
                     <tr>
-			<td valign="top"><img  src="../images/06.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/07.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/08.jpg" class="imgBox" /></td>
-			<td valign="top"><img  src="../images/09.jpg" class="imgBox" /></td>
+			<td valign="top"><a href="{{url_home}}/06/06.html" target="_blank"><img  src="../images/06.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/07/07.html" target="_blank"><img  src="../images/07.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/08/08.html" target="_blank"><img  src="../images/08.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/09/09.html" target="_blank"><img  src="../images/09.jpg" class="imgBox" /></a></td>
                         <td valign="top">
                             <div class="imgBox" align="right">
                                 <br />
