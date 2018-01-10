@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Learning Guide" />
+
+  <Content type="html" view="home">
+
+    <![CDATA[     
+       
+     <style type="text/css">
+		
+		body {font-family: Arial, Helvetica, Sans-serif;}
+	 
+        .imgBox
+        {
+            width: 130px;
+            height: 90px;
+        }
+        
+        .imgBox:hover {  border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+             -webkit-box-shadow: 1px 1px 5px #999;
+             box-shadow: 1px 1px 5px #999;}   
+             
+        .outerTable
+        {
+            border: 1px solid black;          
+            width: 40%;                    
+            height:250px;
+        }
+
+        .hrln
+        {
+            height: 1.5px; 
+            border: none; 
+            color: #333; 
+            background-color: #333;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <table class="outerTable" align="center">
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td width="40%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="20%">
+                            <span style="font-size:13pt">Guided Learning</span>
+                        </td>
+                        <td width="40%">
+                            <hr class="hrln"  />
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td valign="top"><a href="{{url_home}}/learning_guide/01/01.html" target="_blank"><img  src="../images/01.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/02/02.html" target="_blank"><img  src="../images/02.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/03/03.html" target="_blank"><img  src="../images/03.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/04/04.html" target="_blank"><img  src="../images/04.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/05/05.html" target="_blank"><img  src="../images/05.jpg" class="imgBox" /></a></td>
+                    </tr>
+                    <tr>
+			<td valign="top"><a href="{{url_home}}/learning_guide/06/06.html" target="_blank"><img  src="../images/06.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/07/07.html" target="_blank"><img  src="../images/07.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/08/08.html" target="_blank"><img  src="../images/08.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/09/09.html" target="_blank"><img  src="../images/09.jpg" class="imgBox" /></a></td>
+                        <td valign="top">
+                            <div class="imgBox" align="right">
+                                <br />
+                                <table width="100%">
+                                    <tr>
+                                        <td width="22%" align="center">
+                                           <span style="font-size:9pt">Browse All
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" width="78%">
+                                            <span style="font-size:9pt">Learning Guides
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+   <script src="../js/vars.js"></script>
+    ]]>
+
+    
+    
+  </Content>
+  <Content type="html" view="canvas">
+    <![CDATA[    
+      
+     ]]>
+  </Content>
+</Module>
+
+
