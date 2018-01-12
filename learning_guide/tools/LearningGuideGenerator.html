@@ -1,16 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Untitled Page</title>
-    <style type="text/css">
-        .list
-        {
-            width: 120px;
-        }
-    </style>
-  
+    <title>Untitled Page</title>  
 
-    <script type="text/javascript">
+    <script type="text/javascript">      
+
         var intTextBox = 0;       
 
         function addElement() {
@@ -33,16 +27,12 @@
         function generatefile() {
             //var textToSave = document.getElementById("inputTextToSave").value;
             var textToSave = '<!DOCTYPE html>'
-            textToSave += '\n<html>\n<head>\n<link rel="stylesheet" href="../css/tab.css">\n</head>\n<body>'
-            textToSave += '\n<div style="position:relative;top:0px;left:0px;padding-left:0;background-color:#000000" >'
-            textToSave += '\n<div style="position:relative;top:10px;left:0px;padding-left:20;background-color:#000000" >'
-            textToSave += '\n<img src="../images/dxc_logo.jpg">'
-            textToSave += '\n</div> '
-            textToSave += '\n<div style="position:absolute;top:0px;left:100px;padding-left:0;background-color:#000000">'
-            textToSave += '\n<h2 style="color:white;">DXC University</h3>'
-            textToSave += '\n</div>'
-            textToSave += '\n</div>'
-
+            textToSave += '\n<html>\n<head>\n<link rel="stylesheet" href="../css/tab.css">'
+            textToSave += '\n<script type="text/javascript" src="../js/Header.js">' + '<' + '/script' + '>'  
+            textToSave += '\n</head>'
+            textToSave += '\n</body>'
+                   
+           
             textToSave += '\n<div class="tab">'
             for (i = 1; i <= intTextBox; i++) {
                 if (i == 1) {                  
@@ -50,7 +40,7 @@
                 }
               else {
                   var tb = document.getElementById('tb_' + i).value                        
-                   textToSave += '\n<button class="tablinks" onclick="openTab(event,  \'tab' + i + ')">' + tb + '</button>'
+                   textToSave += '\n<button class="tablinks" onclick="openTab(event,  \'tab' + i + "'" + ')">' + tb + '</button>'
                 }
            }
 
@@ -100,9 +90,7 @@
         function destroyClickedElement(event) {
             document.body.removeChild(event.target);
         } 
-      
-
-        
+              
     
     </script>
 </head>
