@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Untitled Page</title>  
+    <title>Untitled Page</title>
 
-    <script type="text/javascript">      
+    <link rel="stylesheet" href="../css/TabGenerator.css">
+  
+ 
+    <script type="text/javascript">
 
-        var intTextBox = 0;       
+        var intTextBox = 0;
 
         function addElement() {
             intTextBox++;
             var objNewDiv = document.createElement('div');
             objNewDiv.setAttribute('id', 'div_' + intTextBox);
-            objNewDiv.innerHTML = 'Tab name ' + intTextBox + ': <input type="text" id="tb_' + intTextBox + '" name="tb_' + intTextBox + '"/>';
+            objNewDiv.innerHTML = 'Tab name ' + intTextBox + ': &nbsp;&nbsp; <input type="text" id="tb_' + intTextBox + '" name="tb_' + intTextBox + '"/>';
             document.getElementById('content').appendChild(objNewDiv);
         }
 
@@ -28,42 +31,42 @@
             //var textToSave = document.getElementById("inputTextToSave").value;
             var textToSave = '<!DOCTYPE html>'
             textToSave += '\n<html>\n<head>\n<link rel="stylesheet" href="../css/tab.css">'
-            textToSave += '\n<script type="text/javascript" src="../js/header.js">' + '<' + '/script' + '>'  
+            textToSave += '\n<script type="text/javascript" src="../js/Header.js">' + '<' + '/script' + '>'
             textToSave += '\n</head>'
             textToSave += '\n</body>'
-                   
-           
+
+
             textToSave += '\n<div class="tab">'
             for (i = 1; i <= intTextBox; i++) {
-                if (i == 1) {                  
-                  textToSave += '\n<button class="tablinks" onclick="openTab(event, \'tab1\')" id="defaultOpen">' + tb_1.value + '</button>'                  
+                if (i == 1) {
+                    textToSave += '\n<button class="tablinks" onclick="openTab(event, \'tab1\')" id="defaultOpen">' + tb_1.value + '</button>'
                 }
-              else {
-                  var tb = document.getElementById('tb_' + i).value                        
-                   textToSave += '\n<button class="tablinks" onclick="openTab(event,  \'tab' + i + "'" + ')">' + tb + '</button>'
+                else {
+                    var tb = document.getElementById('tb_' + i).value
+                    textToSave += '\n<button class="tablinks" onclick="openTab(event,  \'tab' + i + "'" + ')">' + tb + '</button>'
                 }
-           }
+            }
 
-           textToSave += '\n</div>'
-           for (i = 1; i <= intTextBox; i++) {
-               if (i != 2) {
-                   textToSave += '\n<div id="tab' + i + '" class="tabcontent">'
-               }
-               else {
-                   textToSave += '\n<div id="tab' + i + '" class="tabcontent" style="display:none">'
-               }
-               textToSave += '\n<iframe src="tab' + i + '.html" width="100%" height="100%" frameborder=0>'
+            textToSave += '\n</div>'
+            for (i = 1; i <= intTextBox; i++) {
+                if (i != 2) {
+                    textToSave += '\n<div id="tab' + i + '" class="tabcontent">'
+                }
+                else {
+                    textToSave += '\n<div id="tab' + i + '" class="tabcontent" style="display:none">'
+                }
+                textToSave += '\n<iframe src="tab' + i + '.html" width="100%" height="100%" frameborder=0>'
 
-               textToSave += '\n<p>Your browser does not support iframes.</p>'
-               textToSave += '\n</iframe>'
-               textToSave += '\n</div>'
-           }
+                textToSave += '\n<p>Your browser does not support iframes.</p>'
+                textToSave += '\n</iframe>'
+                textToSave += '\n</div>'
+            }
 
-           textToSave += '\n<script src="../js/tab.js">' + '<' + '/script' + '>'
+            textToSave += '\n<script src="../js/tab.js">' + '<' + '/script' + '>'
 
-           textToSave += '\n' + '<' + '/body' + '>'
-           textToSave += '\n' + '<' + '/html' + '>'          
-                                                            
+            textToSave += '\n' + '<' + '/body' + '>'
+            textToSave += '\n' + '<' + '/html' + '>'
+
 
             var textToSaveAsBlob = new Blob([textToSave], { type: "text/html" });
             var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
@@ -82,49 +85,66 @@
                 downloadLink.style.display = "none";
                 document.body.appendChild(downloadLink);
 
-               downloadLink.click();
-              // downloadLink.onclick();
+                downloadLink.click();
+                // downloadLink.onclick();
             }
         }
 
         function destroyClickedElement(event) {
             document.body.removeChild(event.target);
         } 
-              
-    
+      
+
+            
     </script>
 </head>
 <body>
-    <table width="40%" align="center" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-            <td width="30%">
-                <!--Number Of Tabs:-->
-            </td>
-            <td width="50%" colspan="2">
-               <!-- <input type="text" id="member" name="member" value="" />-->
-               
-            </td>
-            <td width="20%">
-                <!--<a href="#" id="filldetails" onclick="addFields()">Add</a>-->
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                                  
-            <a href="javascript:void(0);" onclick="addElement();">Add Tab Name</a> &nbsp;&nbsp;
-            <a href="javascript:void(0);" onclick="removeElement();">Remove Tab Name</a><br /><br />
-                
-
-             <b>Tab names: </b><br />
-            <div id="content"></div>
-            </td>
-        </tr>
-        <tr><td height="20"></td></tr>
-
-       <tr><td>  <button onclick="generatefile()"><b>Generate File</b></button> </td></tr>
-
-
-    </table>
-    
+    <div style="position: relative; top: 0px; left: 0px; padding-left: 0; background-color: #000000;">
+        <div style="position: relative; top: 10px; left: 0px; padding-left: 20; background-color: #000000">
+            <img src="../images/dxc_logo.jpg">
+        </div>
+        <div style="position: absolute; top: 0px; left: 100px; padding-left: 0; background-color: #000000">
+            <h2 style="color: white;">
+                DXC University</h2>
+        </div>
+    </div>
+    <!--  <div class="width100percent margin10" id="reimbursement_div" >-->
+    <div class="groupbox ">
+        <div class="groupbox2">
+            <div class="groupbox3">
+            
+            <br />
+            <table width="40%" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="3">
+                        <!-- <a href="javascript:void(0);" onclick="addElement();">Add Tab Name</a> -->
+                        <input type="button" value="Add Tab Name" onclick="addElement();" />
+                        &nbsp;&nbsp;
+                        <!-- <a href="javascript:void(0);" onclick="removeElement();">Remove Tab Name</a>-->
+                        <input type="button" value="Remove Tab Name" onclick="removeElement();" />
+                        <br />
+                        <br />
+                        <b>Tab names: </b>
+                        <br />
+                        <div id="content">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <!-- <button onclick="generatefile()">-->
+                        <input type="button" value="Generate File" onclick="generatefile()" />
+                        <!--<b>Generate File</b>-->
+                      <!--  </button>-->
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
