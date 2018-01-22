@@ -1,0 +1,63 @@
+﻿body
+{
+     font-family: Arial;
+      font-size:medium;
+}
+
+.groupbox
+{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 1px 1px 5px 1px;
+    border: 1px solid #A5A5A5;
+    border-bottom: 1px solid #A5A5A5;
+    background-color: #FFFFFF;
+    height:750px;
+}
+
+.groupbox2
+{
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+    padding: 1px 1px 5px 1px;
+    border: 1px solid #A5A5A5;
+    border-bottom: 1px solid #A5A5A5;
+    background-color: #FFFFFF;
+    height:610px;
+}
+
+.groupbox3
+{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 1px 1px 5px 1px;
+    border: 1px solid #A5A5A5;
+    border-bottom: 1px solid #A5A5A5;
+    background-color: #FFFFFF;
+    height:560px;
+}
+
+input[type="button"]
+{
+  background:none;
+  color:white;
+  border:none;
+  width:150px;
+  height:35px;
+  border-radius:3px;
+  background-color:Black;
+  font-size:16px;
+}
+
+input[type="text"]
+{
+  width:200px;
+  height:15px;
+  margin-right:2px;
+  border-radius:3px;
+  border:1px solid Black;
+  padding:5px;
+}
