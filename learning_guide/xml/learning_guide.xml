@@ -56,17 +56,17 @@
                 </table>
                 <table>
                     <tr>
-                        <td valign="top"><a href="{{url_home}}/learning_guide/01/01.html" target="_blank"><img  src="../images/01.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/02/02.html" target="_blank"><img  src="../images/02.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/03/03.html" target="_blank"><img  src="../images/03.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/04/04.html" target="_blank"><img  src="../images/04.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/05/05.html" target="_blank"><img  src="../images/05.jpg" class="imgBox" /></a></td>
+                        <td valign="top"><a href="{{url_home}}/learning_guide/pages/01/01.html" target="_blank"><img  src="../res/images/01.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/02/02.html" target="_blank"><img  src="../res/images/02.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/03/03.html" target="_blank"><img  src="../res/images/03.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/04/04.html" target="_blank"><img  src="../res/images/04.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/05/05.html" target="_blank"><img  src="../res/images/05.jpg" class="imgBox" /></a></td>
                     </tr>
                     <tr>
-			<td valign="top"><a href="{{url_home}}/learning_guide/06/06.html" target="_blank"><img  src="../images/06.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/07/07.html" target="_blank"><img  src="../images/07.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/08/08.html" target="_blank"><img  src="../images/08.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/09/09.html" target="_blank"><img  src="../images/09.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/06/06.html" target="_blank"><img  src="../res/images/06.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/07/07.html" target="_blank"><img  src="../res/images/07.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/08/08.html" target="_blank"><img  src="../res/images/08.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/09/09.html" target="_blank"><img  src="../res/images/09.jpg" class="imgBox" /></a></td>
                         <td valign="top">
                             <div class="imgBox" align="right">
                                 <br />
@@ -91,7 +91,7 @@
     </table>
     </div>
 
-   <script src="../js/vars.js"></script>
+   <script src="../res/js/vars.js"></script>
     ]]>
 
     
