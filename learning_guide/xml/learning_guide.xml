@@ -58,17 +58,17 @@
                 <table>
                     <tr>
             <td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(0)}}/{{location(0)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(0)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/02/02.html" target="_blank"><img  src="../res/images/02.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/03/03.html" target="_blank"><img  src="../res/images/03.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/04/04.html" target="_blank"><img  src="../res/images/04.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/05/05.html" target="_blank"><img  src="../res/images/05.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(1)}}/{{location(1)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(1)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(2)}}/{{location(2)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(2)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(3)}}/{{location(3)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(3)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(4)}}/{{location(4)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(4)}}.jpg" class="imgBox" /></a></td>
                     </tr>
                     <tr>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/06/06.html" target="_blank"><img  src="../res/images/06.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/07/07.html" target="_blank"><img  src="../res/images/07.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/08/08.html" target="_blank"><img  src="../res/images/08.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/09/09.html" target="_blank"><img  src="../res/images/09.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/10/10.html" target="_blank"><img  src="../res/images/10.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(5)}}/{{location(5)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(5)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(6)}}/{{location(6)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(6)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(7)}}/{{location(7)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(7)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(8)}}/{{location(8)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(8)}}.jpg" class="imgBox" /></a></td>
+			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(9)}}/{{location(9)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(9)}}.jpg" class="imgBox" /></a></td>
                     </tr>
                 </table>
             </td>
