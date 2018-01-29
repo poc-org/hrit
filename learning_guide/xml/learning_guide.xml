@@ -57,7 +57,7 @@
                 </table>
                 <table>
                     <tr>
-            <td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(0)}}/{{location(0)}}.html" target="_blank"><img  src="../res/images/01.jpg" class="imgBox" /></a></td>
+            <td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(0)}}/{{location(0)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(0)}}.jpg" class="imgBox" /></a></td>
 			<td valign="top"><a href="{{url_home}}/learning_guide/pages/02/02.html" target="_blank"><img  src="../res/images/02.jpg" class="imgBox" /></a></td>
 			<td valign="top"><a href="{{url_home}}/learning_guide/pages/03/03.html" target="_blank"><img  src="../res/images/03.jpg" class="imgBox" /></a></td>
 			<td valign="top"><a href="{{url_home}}/learning_guide/pages/04/04.html" target="_blank"><img  src="../res/images/04.jpg" class="imgBox" /></a></td>
