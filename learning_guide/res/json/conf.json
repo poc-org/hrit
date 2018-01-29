@@ -1,1 +1,2 @@
 conf = '[{"name" : "01", "mode" : "1"},{"name" : "02", "mode" : "1"},{"name" : "03", "mode" : "1"},{"name" : "04", "mode" : "1"},{"name" : "05", "mode" : "1"},{"name" : "06", "mode" : "1"},{"name" : "07", "mode" : "1"},{"name" : "08", "mode" : "1"},{"name" : "09", "mode" : "1"}]';
+order = '[{"topfirst" : "01"},{"topsecond" : "02"},{"topthird" : "03"},{"topfourth" : "04"},{"topfifth" : "05"},{"bottomfirst" : "06"},{"bottomsecond" : "07"},{"bottomthird" : "08"},{"bottomfourth" : "09"},{"bottomfifth" : "10"}
