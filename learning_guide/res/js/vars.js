@@ -8,5 +8,5 @@ app.controller('myCtrl', function($scope) {
 	$scope.modeorder = function(page){
 		var pages = JSON.parse(conf);
 		return pages[page].name;
-	}
+	};
 });
