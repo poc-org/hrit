@@ -2,7 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="../../res/css/tab.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 </head>
 <body>
 
@@ -14,22 +13,23 @@
 		<h2 style="color:white;">DXC University</h3>
 	</div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Guided Learning</button>
 </div>
 
 <div id="tab1" class="tabcontent">
- <div id="table"></div>
+<div ng-app="myApp" ng-controller="myCtrl">
+<div id="table"></div>
+</div>
 <iframe src="tab1.html" width="100%" height="100%" frameborder=0>
   <p>Your browser does not support iframes.</p>
   </iframe>
 </div>
 
-<script type="text/javascript" src="../../res/json/conf.json"></script>
 <script src="../../res/js/tab.js"></script>
+<script>conf = '[{"name" : "01", "mode" : "1"},{"name" : "02", "mode" : "1"},{"name" : "03", "mode" : "1"},{"name" : "04", "mode" : "1"},{"name" : "05", "mode" : "1"},{"name" : "06", "mode" : "1"},{"name" : "07", "mode" : "1"},{"name" : "08", "mode" : "1"},{"name" : "09", "mode" : "1"}]';</script>
 <script src="../../res/js/vars.js"></script>
 <script src="../../res/js/mode2order.js"></script>
-
 </body>
 </html> 
