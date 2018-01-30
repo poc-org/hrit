@@ -6,5 +6,5 @@ for (var index = 0; index < conf.length; ++index){
  html += '<tr style="height: 33px;"><td valign="top"><a href="{{url_home}}/learning_guide/pages/{{modeorder(' + index + ')}}/{{modeorder(' + index + ')}}.html" target="_blank"><img src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{modeorder(' + index + ')}}.jpg" class="imgBox" /></a></td></tr>';
 }
 html += '</tbody></table>';
-tabl.innerHTML = html;
+table.innerHTML = html;
 
