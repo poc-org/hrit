@@ -1,4 +1,3 @@
-order = '[{"name" : "01", "mode" : "1"},{"name" : "02", "mode" : "1"},{"name" : "03", "mode" : "1"},{"name" : "04", "mode" : "1"},{"name" : "05", "mode" : "1"},{"name" : "06", "mode" : "1"},{"name" : "07", "mode" : "1"},{"name" : "08", "mode" : "1"},{"name" : "09", "mode" : "1"}]';
 var conf = JSON.parse(order);
 
 var table = document.getElementById("table");
