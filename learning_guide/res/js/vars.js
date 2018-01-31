@@ -6,7 +6,7 @@ app.controller('myCtrl', function($scope) {
 		return pages[page].name;
 	};
 	$scope.modeorder = function(page){
-		var pages = JSON.parse(order);
+		var pages = JSON.parse(conf);
 		return pages[page].name;
 	};
 });
