@@ -1,4 +1,4 @@
-var json = JSON.parse(order);
+var json = JSON.parse(conf);
 
 var table = document.getElementById("table");
 var html = '<table><tbody>';
