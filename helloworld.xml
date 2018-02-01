@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<div style="height:500px">
 <h2 class="w3-center">Manual Slideshow</h2>
 
 <div class="w3-content w3-display-container">
@@ -20,6 +21,10 @@
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
+
+<h2 class="w3-center">Manual Slideshow 3</h2>
+</div>
+
 
 <script>
 var slideIndex = 1;
