@@ -13,7 +13,7 @@
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: -5px;
+    top: 30px;
     left: 110%;
 	opacity: 0;
     transition: opacity 1s
