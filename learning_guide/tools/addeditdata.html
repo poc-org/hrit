@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dynamically Add Remove Data In JSON</title>
+    <script src="../res/js/jquery.min.js"></script>
+     <script src="../res/json/conf.js"></script>
+    <script src="../res/js/addremove.js"></script>    
+    <script src="../res/js/Sortable.js"></script>   
+    <link rel="stylesheet" href="../res/css/TabGenerator.css">
+    
+</head>
+        
+<body onload="createTable()">
+    <div style="position: relative; top: 0px; left: 0px; padding-left: 0; background-color: #000000;">
+        <div style="position: relative; top: 10px; left: 0px; padding-left: 20; background-color: #000000">
+            <img src="../res/images/dxc_logo.jpg">
+        </div>
+        <div style="position: absolute; top: 0px; left: 100px; padding-left: 0; background-color: #000000;">
+            <h2 style="color: white;">
+                DXC University
+            </h2>
+        </div>
+    </div>
+    <div class="groupbox" >
+        <div class="groupbox2" >
+            <div style="width:60%;margin: auto;">
+                <div style="margin: 0 auto;width:80%; margin-top:10px;">
+            
+                <input type="button" id="addRow" value="Add New Row" onclick="addRow()" class="inputbutton1" />
+
+            </div>
+            <!--THE CONTAINER WHERE WE'll ADD THE DYNAMIC TABLE-->
+            <div id="cont"></div>
+                <div style="margin: 0 auto;width:80%">
+            <p>
+             <input type="button" id="bt" value="Generate Configuration File" onclick="sumbit()" class="inputbutton1" /><br />
+              &nbsp;&nbsp;&nbsp; <b style="font-size:13px"> Note:Once you download the conf.js file, upload in github under ~/learning_guide/res/json repository.
+                <br />&nbsp;&nbsp;&nbsp;Mode 1: Its normal page; Mode 2: Make landing page for the respetive page; Mode 3: Add external URL.</b>  
+              </p>   
+                    </div>             
+            </div>
+        </div>
+    </div>
+</body>
