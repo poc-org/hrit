@@ -73,7 +73,7 @@ if (lengthofLoop > 8) {
     htmlData += '<td valign="top"><a href="{{url_mode2}}conf" target="_blank"><img src="{{url_image}}{{mode2conf()}}.jpg" class="imgBox" /></a></td>';
 }
 htmlData += '</tr></table>';
-$("#lbAPIError").html(htmlData);
+$("#tblGuidedLearning").html(htmlData);
 </script>
     <div ng-app="myApp" ng-controller="myCtrl">
     <table class="outerTable">
@@ -85,7 +85,7 @@ $("#lbAPIError").html(htmlData);
                             <hr class="hrln" />
                         </td>
                         <td width="20%">
-                            <span style="font-size:13pt">Guided Learning</span>
+                            <span style="font-size:13pt">Guided Learning 123</span>
                         </td>
                         <td width="40%">
                             <hr class="hrln"  />
