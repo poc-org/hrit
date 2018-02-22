@@ -1,3 +1,9 @@
+  var varConf = getUrlVars()["page"];
+         //alert(varConf);
+         var varJsPage = '../res/json/' + varConf + '.js'
+         loadScript(varJsPage, function () { //initialization code
+         });
+
 var json = JSON.parse(conf);
 var table = document.getElementById("table");
 var html = '';
