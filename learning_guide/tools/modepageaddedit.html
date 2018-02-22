@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dynamically Add Remove Data In JSON</title>
+     <script src="../res/js/comon.js"></script>
+    
+     <script type="text/javascript">
+         var varConf = getUrlVars()["page"];
+         //alert(varConf);
+         var varJsPage = '../res/json/' + varConf + '.js'
+         loadScript(varJsPage, function () { //initialization code
+         });
+
+    </script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../res/js/Sortable.js"></script>  
+    <script src="../res/js/mode2addremove.js"></script>
+    <link rel="stylesheet" href="../res/css/TabGenerator.css">
+    
+</head>
+
+<body onload="createTable()">
+    <div style="position: relative; top: 0px; left: 0px; padding-left: 0; background-color: #000000;">
+        <div style="position: relative; top: 10px; left: 0px; padding-left: 20; background-color: #000000">
+            <img src="../res/images/dxc_logo.jpg">
+        </div>
+        <div style="position: absolute; top: 0px; left: 100px; padding-left: 0; background-color: #000000;">
+            <h2 style="color: white;">
+                DXC University
+            </h2>
+        </div>
+    </div>
+    <div class="groupbox" >
+        <div class="groupbox2" >
+            <div style="width:50%;margin: auto;">
+
+            <p>
+                <input type="button" id="addRow" value="Add New Row" onclick="addRow()" class="inputbutton1" /><br />
+                 <b style="padding-left:190px;">You are managaing  <label id="message"></label> mode 2 page.</b>
+            </p>
+            <!--THE CONTAINER WHERE WE'll ADD THE DYNAMIC TABLE-->
+            <div id="cont"></div>
+            <p>
+             <input type="button" id="bt" value="Generate Configuration File" onclick="sumbit()" class="inputbutton1" /><br />
+              &nbsp;&nbsp;&nbsp; <b style="font-size:13px"> Note:Once you download the conf.js file, upload in github under ~/learning_guide/res/json repository.</b>
+            </p>
+            </div>
+        </div>
+    </div>
+    <script>        
+        document.getElementById('message').innerHTML = varConf;
+    </script>
+</body>
