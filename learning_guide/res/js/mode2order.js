@@ -1,9 +1,12 @@
   var varConf = getUrlVars()["page"];
          //alert(varConf);
          var varJsPage = '../../res/json/' + varConf + '.js'
-         loadScript(varJsPage, function () { //initialization code
-         });
+        // loadScript(varJsPage, function () { //initialization code
+         //});
 
+$.getScript(varJsPage, function() {
+   alert("Script loaded but not necessarily executed.");
+});
 var json = JSON.parse(conf);
 var table = document.getElementById("table");
 var html = '';
