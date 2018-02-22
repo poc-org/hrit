@@ -38,6 +38,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script type="text/javascript" src="../res/json/conf.js"></script>
         <script type="text/javascript" src="../res/json/mode2conf.js"></script>
+<script type="text/javascript" language="javascript">
+var json = JSON.parse(conf);
+var table = document.getElementById("tblGuidedLearning");
+var htmlData = '';
+//alert(url_home);
+first = true;
+var lengthofLoop;
+if (json.length > 9) {
+    lengthofLoop = 9
+}
+else {
+    lengthofLoop = json.length
+}
+var htmlData = '<table><tr>';
+for (var index = 0; index < lengthofLoop; ++index) {
+    if ((index == 5) || (index == 10)) { // Start of next row
+        htmlData += '</tr><tr>'; // Add row separator
+    }
+    if ((json[index].mode) == 2){
+        htmlData += '<td valign="top"><a href="{{url_mode2}}' + json[index].name + '" target="_blank"><img src="{{url_image}}' + json[index].name + '.jpg" class="imgBox" /></a></td>';
+    }
+    else if ((json[index].mode) == 3) {
+        htmlData += '<td valign="top"><a href="' + json[index].url + '" target="_blank"><img src="{{url_image}}' + json[index].name + '.jpg" class="imgBox" /></a></td>';
+    }
+    else {
+        htmlData += '<td valign="top"><a href="{{url_home}}/learning_guide/pages/' + json[index].name + '/' + json[index].name + '.html" target="_blank"><img src="{{url_image}}' + json[index].name + '.jpg" class="imgBox" /></a></td>';
+    }
+}
+
+//Added for the fixed cell for more 
+if (lengthofLoop > 8) {
+    
+    htmlData += '<td valign="top"><a href="{{url_mode2}}conf" target="_blank"><img src="{{url_image}}{{mode2conf()}}.jpg" class="imgBox" /></a></td>';
+}
+htmlData += '</tr></table>';
+$("#lbAPIError").html(htmlData);
+</script>
     <div ng-app="myApp" ng-controller="myCtrl">
     <table class="outerTable">
         <tr>
@@ -55,22 +92,10 @@
                         </td>
                     </tr>
                 </table>
-                <table>
-                    <tr>
-            <td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(0)}}/{{location(0)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(0)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(1)}}/{{location(1)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(1)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(2)}}/{{location(2)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(2)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(3)}}/{{location(3)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(3)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(4)}}/{{location(4)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(4)}}.jpg" class="imgBox" /></a></td>
-                    </tr>
-                    <tr>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(5)}}/{{location(5)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(5)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(6)}}/{{location(6)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(6)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(7)}}/{{location(7)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(7)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(8)}}/{{location(8)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(8)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{mode2conf()}}/{{mode2conf()}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{mode2conf()}}.jpg" class="imgBox" /></a></td>
-                    </tr>
-                </table>
+ <div id="tblGuidedLearning">
+
+                    </div>
+             
             </td>
         </tr>
     </table>
