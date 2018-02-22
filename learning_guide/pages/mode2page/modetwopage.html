@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 123456</title>
+	<title>Mode Two 1111</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
 <script src="../../res/js/jquery.min.js"></script>
-	
+		 <script type="text/javascript">
+        // Get Query String Values Start 
+ 
+	window.onload = function() {
+          if (getUrlVars()["page"].trim() != "") {
+            var varConf = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/' + getUrlVars()["page"] + '.js';
+        }
+        else{
+            var varConf = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/conf.js';
+
+        }        
+      
+     
+    // $.getScript(varConf);
+}
+	var varConf1 = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/02.js';
+		addScript(varConf1);
+ function addScript(filename){
+ var head = document.getElementsByTagName('head')[0];
+ var script = document.createElement('script');
+ script.src = filename;
+ script.type = 'text/javascript';
+ head.append(script);
+}
+    </script>
 <style type="text/css">
         .imgBox
         {
@@ -44,30 +68,7 @@
 
 <script src="../../res/js/tab.js" ></script>
 <script src="../../res/js/vars.js" ></script>
-	 <script type="text/javascript">
-        // Get Query String Values Start 
- 
-	window.onload = function() {
-          if (getUrlVars()["page"].trim() != "") {
-            var varConf = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/' + getUrlVars()["page"] + '.js';
-        }
-        else{
-            var varConf = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/conf.js';
 
-        }        
-      
-     
-    // $.getScript(varConf);
-}
-	var varConf1 = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/02.js';
-     $.ajax({
-  url: varConf1,
-  cache: false,
-  success: function(html){
-   
-  }
-});
-    </script>
 
 <script src="../../res/js/mode2order.js" ></script>
 </body>
