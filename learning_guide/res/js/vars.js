@@ -1,6 +1,6 @@
  var url_home = "https://rawgit.com/poc-org/hrit/test";
  var url_image = "https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/";
- var url_mode2 = "https://rawgit.com/poc-org/hrit/test/pages/mod2page/mod2page.html?page=";
+ var url_mode2 = "https://rawgit.com/poc-org/hrit/test/learning_guide/pages/mode2page/mod2page.html?page";
  var mode2Image = "10.jpg";
     
 
