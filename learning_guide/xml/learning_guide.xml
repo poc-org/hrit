@@ -95,7 +95,7 @@
 	}
 	//Added for the fixed cell for more 
 	if (lengthofLoop > 8) {    
-	    htmlData += '<td valign="top"><a href="' + url_mode2 + 'conf" target="_blank"><img src="' + url_image + mode2conf + '.jpg" class="imgBox" /></a></td>';
+	    htmlData += '<td valign="top"><a href="' + url_mode2 + 'conf" target="_blank"><img src="' + url_image + mode2Image + '" class="imgBox" /></a></td>';
 	}
 	htmlData += '</tr></table>';
 	console.log(htmlData)
