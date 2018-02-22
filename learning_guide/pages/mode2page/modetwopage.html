@@ -8,10 +8,10 @@
 	<script >
         // Get Query String Values Start      
         if (getUrlVars()["page"].trim() != "") {
-            var varConf = '../res/json/' + getUrlVars()["page"] + '.js';
+            var varConf = '../../res/json/' + getUrlVars()["page"] + '.js';
         }
         else{
-            var varConf = '../res/json/conf.js';
+            var varConf = '../../res/json/conf.js';
         }              
         loadScript(varConf, function () {
             //initialization code
