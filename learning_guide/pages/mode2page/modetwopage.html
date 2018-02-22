@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 6767676</title>
+	<title>Mode Two 888</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -19,24 +19,7 @@
              -webkit-box-shadow: 1px 1px 5px #999;
              box-shadow: 1px 1px 5px #999;}
 </style>
-	<script >
-        // Get Query String Values Start 
-     
-        if (getUrlVars()["page"].trim() != "") {
-            var varConf = '../res/json/' + getUrlVars()["page"] + '.js';
-        }
-        else{
-            var varConf = '../res/json/conf.js';
-
-        }        
-      
-        loadScript(varConf, function () {
-            //initialization code
-        });
-     
-    
-     
-    </script>
+	
 </head>
 <body>
 
@@ -58,7 +41,24 @@
 <div id="table"></div>
 </div>
 </div>
+<script >
+        // Get Query String Values Start 
+     
+        if (getUrlVars()["page"].trim() != "") {
+            var varConf = '../res/json/' + getUrlVars()["page"] + '.js';
+        }
+        else{
+            var varConf = '../res/json/conf.js';
 
+        }        
+      
+        loadScript(varConf, function () {
+            //initialization code
+        });
+     
+    
+     
+    </script>
 <script src="../../res/js/tab.js" ></script>
 <script src="../../res/js/vars.js" ></script>
 <script src="../../res/js/mode2order.js" ></script>
