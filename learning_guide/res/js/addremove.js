@@ -85,7 +85,7 @@ function addRow() {
             // CREATE AND ADD TEXTBOX IN EACH CELL.
             var ele = document.createElement('IMG');
             ele.setAttribute('class', 'imagebox');
-            ele.setAttribute('src', 'upload.png');
+            ele.setAttribute('src', '../res/images/upload.png');
             ele.setAttribute('title', 'uplaod image')
             ele.setAttribute('alt', 'Upload Image');
 
