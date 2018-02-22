@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 6666</title>
+	<title>Mode Two 4545</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -43,10 +43,9 @@
 </div>
 <script >
         // Get Query String Values Start 
-     $(document).ready(function () {
-  //your code here
-
-        if (getUrlVars()["page"].trim() != "") {
+ 
+	window.onload = function() {
+          if (getUrlVars()["page"].trim() != "") {
             var varConf = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/' + getUrlVars()["page"] + '.js';
         }
         else{
@@ -56,7 +55,7 @@
       
      
      $.getScript(varConf);
-    });
+}
      
     </script>
 
