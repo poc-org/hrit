@@ -1,6 +1,6 @@
   var varConf = getUrlVars()["page"];
          //alert(varConf);
-         var varJsPage = '../res/json/' + varConf + '.js'
+         var varJsPage = '../../res/json/' + varConf + '.js'
          loadScript(varJsPage, function () { //initialization code
          });
 
