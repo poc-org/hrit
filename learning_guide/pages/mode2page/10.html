@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../res/css/tab.css">
+<link rel="stylesheet" href="../../res/css/tooltip.css">
+<style type="text/css">
+        .imgBox
+        {
+            width: 130px;
+            height: 90px;
+        }
+        
+        .imgBox:hover {  border: solid 1px #CCC;
+            -moz-box-shadow: 1px 1px 5px #999;
+             -webkit-box-shadow: 1px 1px 5px #999;
+             box-shadow: 1px 1px 5px #999;}
+</style>
+</head>
+<body>
+
+<div style="position:relative;top:0px;left:0px;padding-left:0;background-color:#000000" >
+    <div style="position:relative;top:10px;left:0px;padding-left:20;background-color:#000000" >
+		<img src="../../res/images/dxc_logo.jpg">
+	</div>     			   
+	<div style="position:absolute;top:0px;left:100px;padding-left:0;background-color:#000000">
+		<h2 style="color:white;">DXC University</h3>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Guided Learning</button>
+</div>
+
+<div id="tab1" class="tabcontent">
+<div ng-app="myApp" ng-controller="myCtrl">
+<div id="table"></div>
+</div>
+</div>
+<script src="../../res/json/conf.js"></script>
+<script src="../../res/js/tab.js"></script>
+<script src="../../res/js/vars.js"></script>
+<script src="../../res/js/mode2order.js"></script>
+</body>
+</html> 
