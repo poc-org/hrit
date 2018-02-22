@@ -45,7 +45,7 @@ function createTable() {
                 scroll: true,
                 handle: '.imagebox',
                 onEnd: function () {
-                    console.log('More see in https://github.com/RubaXa/Sortable');
+                    console.log('More see in log');
                 }
             }
         );
