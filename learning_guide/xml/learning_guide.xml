@@ -39,6 +39,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<!--<script type="text/javascript" src="../res/json/conf.js"></script>-->
         <!--<script type="text/javascript" src="../res/json/mode2conf.js"></script>-->
+
+  <script type="text/javascript" src="../res/json/conf.js"></script>
+  <script type="text/javascript" src="../res/json/mode2conf.js"></script>  
+  <script type="text/javascript" src="../res/js/vars.js"></script>
+  <script type="text/javascript" src="../res/js/guidedlearning.js"></script>
+
     <div ng-app="myApp" ng-controller="myCtrl">
     <table class="outerTable">
         <tr>
@@ -62,10 +68,6 @@
         </tr>
     </table>
     </div>
-  <script type="text/javascript" src="../res/json/conf.js"></script>
-  <script type="text/javascript" src="../res/json/mode2conf.js"></script>  
-  <script type="text/javascript" src="../res/js/vars.js"></script>
-  <script type="text/javascript" src="../res/js/guidedlearning.js"></script>
     ]]>
 
     
