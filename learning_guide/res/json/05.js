@@ -1,0 +1,1 @@
+conf = '[{"name":"12","description":"Test Description 12","mode":"1"},{"name":"11","description":"Test Description 11","mode":"1"},{"name":"09","description":"Test Description 09","mode":"1"},{"name":"08","description":"Test Description 08","mode":"1"},{"name":"07","description":"Test Description 07","mode":"1"},{"name":"06","description":"Test Description 06","mode":"1"}]';
