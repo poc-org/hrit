@@ -8,6 +8,8 @@
        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
 	<script type="text/javascript" src="../res/json/conf.js"></script>
         <script type="text/javascript" src="../res/json/mode2conf.js"></script>
+<script type="text/javascript" src="../res/json/vars.js"></script>
+
      <style type="text/css">
 		
 		body {font-family: Arial, Helvetica, Sans-serif;}
@@ -73,6 +75,7 @@ if (lengthofLoop > 8) {
     htmlData += '<td valign="top"><a href="{{url_mode2}}conf" target="_blank"><img src="{{url_image}}{{mode2conf()}}.jpg" class="imgBox" /></a></td>';
 }
 htmlData += '</tr></table>';
+console.log(htmlData)
 $("#tblGuidedLearning").html(htmlData);
 </script>
     <div ng-app="myApp" ng-controller="myCtrl">
@@ -85,7 +88,7 @@ $("#tblGuidedLearning").html(htmlData);
                             <hr class="hrln" />
                         </td>
                         <td width="20%">
-                            <span style="font-size:13pt">Guided Learning 4444</span>
+                            <span style="font-size:13pt">Guided Learning 5555</span>
                         </td>
                         <td width="40%">
                             <hr class="hrln"  />
@@ -100,7 +103,7 @@ $("#tblGuidedLearning").html(htmlData);
         </tr>
     </table>
     </div>
-   <script src="../res/js/vars.js"></script>
+   
     ]]>
 
     
