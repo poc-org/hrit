@@ -3,6 +3,22 @@
 <head>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
+	<script src="../../res/js/comon.js"></script>
+	<script >
+        // Get Query String Values Start      
+        if (getUrlVars()["page"].trim() != "") {
+            var varConf = '../res/json/' + getUrlVars()["page"] + '.js';
+        }
+        else{
+            var varConf = '../res/json/conf.js';
+        }              
+        loadScript(varConf, function () {
+            //initialization code
+        });
+     
+    
+     
+    </script>
 <style type="text/css">
         .imgBox
         {
@@ -26,7 +42,8 @@
 		<h2 style="color:white;">DXC University</h3>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+	<script src="../../res/js/angular.min.js">
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Guided Learning</button>
 </div>
