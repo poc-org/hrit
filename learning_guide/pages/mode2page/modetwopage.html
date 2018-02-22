@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 23232</title>
+	<title>Mode Two 6767676</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
-	
+<script src="../../res/js/comon.js" ></script>
 
 	
 <style type="text/css">
@@ -19,6 +19,24 @@
              -webkit-box-shadow: 1px 1px 5px #999;
              box-shadow: 1px 1px 5px #999;}
 </style>
+	<script >
+        // Get Query String Values Start 
+     
+        if (getUrlVars()["page"].trim() != "") {
+            var varConf = '../res/json/' + getUrlVars()["page"] + '.js';
+        }
+        else{
+            var varConf = '../res/json/conf.js';
+
+        }        
+      
+        loadScript(varConf, function () {
+            //initialization code
+        });
+     
+    
+     
+    </script>
 </head>
 <body>
 
@@ -40,7 +58,7 @@
 <div id="table"></div>
 </div>
 </div>
-<script src="../../res/json/02.js"></script>
+
 <script src="../../res/js/tab.js" ></script>
 <script src="../../res/js/vars.js" ></script>
 <script src="../../res/js/mode2order.js" ></script>
