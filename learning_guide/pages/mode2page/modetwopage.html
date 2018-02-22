@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 2323</title>
+	<title>Mode Two 1234</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -12,10 +12,11 @@
          var varConf = getUrlVars()["page"];
          //alert(varConf);
          var varJsPage = '../../res/json/' + varConf + '.js'
-         loadScript(varJsPage, function () { //initialization code
-         });
-	     alert(varJsPage);
-	      document.getElementById('loadarea').src= varJsPage;
+	 setTimeout(function(){ loadScript(varJsPage, function () { //initialization code
+         }); }, 3000);
+         
+	    // alert(varJsPage);
+	      //document.getElementById('loadarea').src= varJsPage;
     </script>
 <style type="text/css">
         .imgBox
