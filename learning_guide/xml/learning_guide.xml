@@ -8,7 +8,7 @@
        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
 	<script type="text/javascript" src="../res/json/conf.js"></script>
         <script type="text/javascript" src="../res/json/mode2conf.js"></script>
-<script type="text/javascript" src="../res/json/vars.js"></script>
+<script type="text/javascript" src="../res/js/vars.js"></script>
 
      <style type="text/css">
 		
