@@ -32,5 +32,6 @@ if (lengthofLoop > 8) {
     html += '<td valign="top"><a href="{{url_mode2}}conf" target="_blank"><img src="{{url_image}}{{mode2conf()}}.jpg" class="imgBox" /></a></td>';
 }
 html += '</tr></table>';
+console.log(html);
 table.innerHTML = html;
 
