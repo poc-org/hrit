@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 4444</title>
+	<title>Mode Two 555</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -9,17 +9,17 @@
 	
     
      <script type="text/javascript">
-	     var script = "https://rawgit.com/poc-org/hrit/test/learning_guide/res/json/02.js";
-       
-	
-	
+	     //var script = "https://rawgit.com/poc-org/hrit/test/learning_guide/res/json/02.js";	
+	      var varConf = getUrlVars()["page"];        
+              var varJsPage = '../../res/json/' + varConf + '.js'
+	     
 	(function() {
     // Create the request and the script
     var xhr = new XMLHttpRequest(),
         s = document.createElement('script');
 
     // Send the request to retrieve custom.js
-    xhr.open('GET', script, false);
+    xhr.open('GET', varJsPage, false);
     xhr.send();
 
     // Listen for onload, and remove the script after execution
