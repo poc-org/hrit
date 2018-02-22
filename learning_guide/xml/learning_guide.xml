@@ -56,28 +56,16 @@
                         </td>
                     </tr>
                 </table>
-                <table>
-                    <tr>
-            <td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(0)}}/{{location(0)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(0)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(1)}}/{{location(1)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(1)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(2)}}/{{location(2)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(2)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(3)}}/{{location(3)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(3)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(4)}}/{{location(4)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(4)}}.jpg" class="imgBox" /></a></td>
-                    </tr>
-                    <tr>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(5)}}/{{location(5)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(5)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(6)}}/{{location(6)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(6)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(7)}}/{{location(7)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(7)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{location(8)}}/{{location(8)}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{location(8)}}.jpg" class="imgBox" /></a></td>
-			<td valign="top"><a href="{{url_home}}/learning_guide/pages/{{mode2conf()}}/{{mode2conf()}}.html" target="_blank"><img  src="https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/{{mode2conf()}}.jpg" class="imgBox" /></a></td>
-                    </tr>
-                </table>
+           	    <div id="tblGuidedLearning">
+                    </div>
             </td>
         </tr>
     </table>
     </div>
-
-   <script src="../res/js/vars.js"></script>
+  <script type="text/javascript" src="../res/json/conf.js"></script>
+  <script type="text/javascript" src="../res/json/mode2conf.js"></script>
+  <script src="../res/js/vars.js"></script>
+ <script type="text/javascript" src="../res/js/guidedlearning.js"></script>
     ]]>
 
     
