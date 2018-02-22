@@ -40,6 +40,32 @@
         }
     </style>
     
+    <div ng-app="myApp" ng-controller="myCtrl">
+    <table class="outerTable">
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td width="40%">
+                            <hr class="hrln" />
+                        </td>
+                        <td width="20%">
+                            <span style="font-size:13pt">Guided Learning 11111</span>
+                        </td>
+                        <td width="40%">
+                            <hr class="hrln"  />
+                        </td>
+                    </tr>
+                </table>
+ <div id="tblGuidedLearning">
+
+                    </div>
+             
+            </td>
+        </tr>
+    </table>
+    </div>
+   
 <script type="text/javascript" language="javascript">
 var json = JSON.parse(conf);
 var table = document.getElementById("tblGuidedLearning");
@@ -78,32 +104,6 @@ htmlData += '</tr></table>';
 console.log(htmlData)
 $("#tblGuidedLearning").html(htmlData);
 </script>
-    <div ng-app="myApp" ng-controller="myCtrl">
-    <table class="outerTable">
-        <tr>
-            <td colspan="2">
-                <table width="100%">
-                    <tr>
-                        <td width="40%">
-                            <hr class="hrln" />
-                        </td>
-                        <td width="20%">
-                            <span style="font-size:13pt">Guided Learning 5555</span>
-                        </td>
-                        <td width="40%">
-                            <hr class="hrln"  />
-                        </td>
-                    </tr>
-                </table>
- <div id="tblGuidedLearning">
-
-                    </div>
-             
-            </td>
-        </tr>
-    </table>
-    </div>
-   
     ]]>
 
     
