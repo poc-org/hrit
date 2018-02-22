@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 3434</title>
+	<title>Mode Two 123456</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -57,9 +57,16 @@
         }        
       
      
-     $.getScript(varConf);
+    // $.getScript(varConf);
 }
-     
+	var varConf1 = 'https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/json/02.js';
+     $.ajax({
+  url: varConf1,
+  cache: false,
+  success: function(html){
+   
+  }
+});
     </script>
 
 <script src="../../res/js/mode2order.js" ></script>
