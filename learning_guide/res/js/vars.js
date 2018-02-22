@@ -1,6 +1,6 @@
- url_home = "https://rawgit.com/poc-org/hrit/test";
- url_image = "https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/";
- url_mode2 = "https://rawgit.com/poc-org/hrit/test/mod2page.html?page=";
+ var url_home = "https://rawgit.com/poc-org/hrit/test";
+ var url_image = "https://raw.githubusercontent.com/poc-org/hrit/test/learning_guide/res/images/";
+ var url_mode2 = "https://rawgit.com/poc-org/hrit/test/mod2page.html?page=";
     
 
 var app = angular.module('myApp', []);
