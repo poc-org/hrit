@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mode Two 555</title>
+	<title>Mode Two 888</title>
 <link rel="stylesheet" href="../../res/css/tab.css">
 <link rel="stylesheet" href="../../res/css/tooltip.css">
 <script src="../../res/js/comon.js" ></script>
@@ -10,7 +10,11 @@
     
      <script type="text/javascript">
 	     var script = "https://rawgit.com/poc-org/hrit/test/learning_guide/res/json/02.js";
-       $("head").append('<script type="text/javascript" src="' + script + '"></script>');
+       //$("head").append('<script type="text/javascript" src="' + script + '"></script>');
+	var s = document.createElement("script");
+s.type = "text/javascript";
+s.src = "https://rawgit.com/poc-org/hrit/test/learning_guide/res/json/02.js";
+$("head").append(s);
 	    
     </script>
 <style type="text/css">
