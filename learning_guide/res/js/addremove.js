@@ -191,8 +191,8 @@ function sumbit() {
 
     var textToSaveAsBlob = new Blob([varJSONData], { type: "text/html" });
     var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
-    var fileNameToSaveAs = 'conf.js'
-    //var fileNameToSaveAs = varConf + '.js'
+    //var fileNameToSaveAs = 'conf.js'
+    var fileNameToSaveAs = varConf + '.js'
 
     if (window.navigator && window.navigator.msSaveOrOpenBlob) {
         window.navigator.msSaveOrOpenBlob(textToSaveAsBlob, fileNameToSaveAs);
