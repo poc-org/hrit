@@ -8,9 +8,21 @@ function getUrlVars() {
         vars.push(hash[0]);
         vars[hash[0]] = hash[1];
     }
-
+    
     return vars;
 
+}
+var varConf = getParameterByName('page');
+var varJsPage = '../res/json/' + varConf + '.js';
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return 'conf';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 // Get Query String Values END
 //Load Dynamically JS file in page start 
@@ -47,3 +59,24 @@ function loadScript(url, callback) {
                 document.getElementsByTagName("head")[0].appendChild(fileref)
         }
 //Load Dynamically JS file in page END
+
+//Load Dynamically JS file in page Start 
+
+
+        (function () {
+            // Create the request and the script
+            var xhr = new XMLHttpRequest(),
+                s = document.createElement('script');
+            // Send the request to retrieve custom.js
+            xhr.open('GET', varJsPage, false);
+            xhr.send();
+            // Listen for onload, and remove the script after execution
+            s.addEventListener("load", function (e) {
+                s.parentElement.removeChild(s);
+            });
+            // Load the code inside the script and run it in the head
+            s.textContent = xhr.responseText;
+            document.head.appendChild(s);
+        })();
+
+//Load Dynamically JS file in page Start 
