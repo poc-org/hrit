@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dynamically Add Remove Data In JSON New</title>
+    <title>Dynamically Add Remove Data In JSON 1234</title>
      <script src="../res/js/comon.js"></script>
-	<script src="../res/js/jquery.min.js"></script>
+     <script src="../res/js/jquery.min.js"></script>
     
-     <script type="text/javascript">
-        var varConf = getUrlVars()["page"];        
-       var varJsPage = '../res/json/' + varConf + '.js';
-         
-     function() {
+       <script type="text/javascript">
+	     //var script = "https://rawgit.com/poc-org/hrit/test/learning_guide/res/json/02.js";	
+	      var varConf = getUrlVars()["page"];        
+              var varJsPage = '../../res/json/' + varConf + '.js';
+	     
+	(function() {
     // Create the request and the script
     var xhr = new XMLHttpRequest(),
         s = document.createElement('script');
@@ -25,7 +26,6 @@
     document.head.appendChild(s);
 })();
 	    
-
     </script>
     
     
