@@ -1,0 +1,1 @@
+conf = '[{"name":"MSW1","description":"Test Description MSW1","mode":"3","url":"https://office.live.com/start/Word.aspx"},{"name":"MSW2","description":"Test Description MSW2","mode":"3","url":"https://office.live.com/start/PowerPoint.aspx"},{"name":"MSW3","description":"Test Description MSW3","mode":"3","url":"https://office.live.com/start/Excel.aspx"}]';
