@@ -74,7 +74,18 @@ body
     color: #fff;
 }
 
-
+.inputbuttonTab
+{
+  cursor: pointer;
+  background:none;
+  color:white;
+  border:none;
+  width:150px;
+  height:35px;
+  border-radius:3px;
+  background-color:Black;
+  font-size:16px;
+}
 .inputbutton2
 {
     cursor: pointer;
@@ -89,7 +100,7 @@ body
     font-size:16px;
 }
 
-.inputbutton2:hover {
+.inputbutton2:hover,.inputbuttonTab:hover{
     background: #F39C12;
     color: #fff;
 }
