@@ -119,14 +119,19 @@ function addRow() {
 
         }
         else if (c == 4) {
-            // CREATE AND ADD TEXTBOX IN EACH CELL.
-            var ele = document.createElement('input');
-            ele.setAttribute('type', 'text');
-            ele.setAttribute('id', 'textBox' + rowCnt);
-            ele.setAttribute('value', 'No Change');
-            ele.setAttribute("readonly", true);
-            td.appendChild(ele);
 
+            // Created and ADD Button to configure the page
+            var buttonPage = document.createElement('input');
+            // SET INPUT ATTRIBUTE.
+            buttonPage.setAttribute('id', 'butPageConfig' + rowCnt);
+            buttonPage.setAttribute('type', 'button');
+            buttonPage.setAttribute('value', 'PageSetup');
+            buttonPage.setAttribute('class', 'inputbutton2');            
+            // ADD THE BUTTON's 'onclick' EVENT.
+            buttonPage.setAttribute('onclick', 'genPageConfi(this)');
+            td.appendChild(buttonPage);
+
+            // Created and ADD Button to configure the tree 
             var button = document.createElement('input');
             // SET INPUT ATTRIBUTE.
             button.setAttribute('id', 'butURLConfig' + rowCnt);
@@ -137,6 +142,15 @@ function addRow() {
             // ADD THE BUTTON's 'onclick' EVENT.
             button.setAttribute('onclick', 'genMode2URL(this)');
             td.appendChild(button);
+
+            // CREATE AND ADD TEXTBOX IN EACH CELL.
+            var ele = document.createElement('input');
+            ele.setAttribute('type', 'text');
+            ele.setAttribute('id', 'textBox' + rowCnt);
+            ele.setAttribute('value', 'http://');
+            ele.setAttribute("hidden", true);
+            td.appendChild(ele);
+
 
         }
         else {
@@ -178,7 +192,7 @@ function sumbit() {
                 values.push("\"mode\":\"" + element.childNodes[0].value + "\"");
             }
             else if (c == 4) {
-                values.push("\"url\":\"" + element.childNodes[0].value + "\"}");
+                values.push("\"url\":\"" + element.childNodes[2].value + "\"}");
                 
             }
             
@@ -283,22 +297,21 @@ function appendRow(name, discription, mode, url,ID) {
 
         }
         else if (c == 4) {
-            // CREATE AND ADD TEXTBOX IN EACH CELL.
-            var ele = document.createElement('input');
-            ele.setAttribute('id', 'textBox' + ID);
-            ele.setAttribute('type', 'text');            
-            ele.setAttribute('value', url);
-            if (mode == 1) {                
-                ele.setAttribute("readonly", true);
-                ele.setAttribute('value', "No Change");
-                //ele.setAttribute("hidden", true);
-            }
-            else if (mode == 2) {
-                ele.setAttribute("hidden", true);                
-            }
 
-            td.appendChild(ele);
 
+            // Created and ADD Button to configure the page
+            var buttonPage = document.createElement('input');
+            // SET INPUT ATTRIBUTE.
+            buttonPage.setAttribute('id', 'butPageConfig' + rowCnt);
+            buttonPage.setAttribute('type', 'button');
+            buttonPage.setAttribute('value', 'PageSetup');
+            buttonPage.setAttribute('class', 'inputbutton2');
+            // ADD THE BUTTON's 'onclick' EVENT.
+            buttonPage.setAttribute('onclick', 'genPageConfi(this)');
+            if ((mode == 2) || (mode == 3)) {
+                buttonPage.setAttribute("hidden", true);
+            }
+            td.appendChild(buttonPage);
             var button = document.createElement('input');
             // SET INPUT ATTRIBUTE.
             button.setAttribute('id', 'butURLConfig'+ ID);
@@ -313,7 +326,18 @@ function appendRow(name, discription, mode, url,ID) {
             // ADD THE BUTTON's 'onclick' EVENT.
             button.setAttribute('onclick', 'genMode2URL(this)');
             td.appendChild(button);
-            
+
+
+            // CREATE AND ADD TEXTBOX IN EACH CELL.
+            var ele = document.createElement('input');
+            ele.setAttribute('id', 'textBox' + ID);
+            ele.setAttribute('type', 'text');
+            ele.setAttribute('value', url);
+            if ((mode == 1) || (mode == 2)) {
+                ele.setAttribute("hidden", true);
+            }
+
+            td.appendChild(ele);
         }
 
         else {
@@ -325,43 +349,40 @@ function appendRow(name, discription, mode, url,ID) {
             td.appendChild(ele);
         }
 
-
     }
 }
 // add rowes from json file end 
 // DropDown change need to enable and disable the button and text filed start
-function onChange(oDropDown) {
-    
-    var varValue = oDropDown.value;
-    //alert(oDropDown.parentNode.parentNode.rowIndex);
+function onChange(oDropDown) {var varValue = oDropDown.value;    
     var strRowIndex = oDropDown.parentNode.parentNode.rowIndex;
     var myTab = document.getElementById('empTable');
-    //myTab.rows.item(strRowIndex).cells[4].style.display = "none";
     
-     if (varValue == 2) {
-        $("#textBox" + strRowIndex).hide();
-        $("#butURLConfig" + strRowIndex).show();
+    var element = myTab.rows.item(strRowIndex).cells[4];
+    if (varValue == 1) {
+        
+        element.childNodes[0].style.display = "block";
+        element.childNodes[1].style.display = "none";
+        element.childNodes[2].style.display = "none";
+     }
+    else if (varValue == 2) {
+
+        element.childNodes[0].style.display = "none";
+        element.childNodes[1].style.display = "block";
+        element.childNodes[2].style.display = "none";
+     }
+    else if (varValue == 3) {
+        element.childNodes[0].style.display = "none";
+        element.childNodes[1].style.display = "none";
+        element.childNodes[2].style.display = "block";
+
     }
-     else if (varValue == 3) {
-        $("#textBox" + strRowIndex).show();
-        $("#textBox" + strRowIndex).removeAttr("readonly");
-        $("#textBox" + strRowIndex).val("Add External URL");
-        $("#butURLConfig" + strRowIndex).hide();
-    }
-    else {
-        $("#textBox" + strRowIndex).show();
-        $("#textBox" + strRowIndex).attr('readonly', 'true');
-        $("#textBox" + strRowIndex).val("No Change");
-        $("#butURLConfig" + strRowIndex).hide();
-    }
-    //alert(myTab.rows.item(4).cells[4].display);
-    //var empTab = document.getElementById('empTable');
-    //empTab.deleteRow(oDropDown.parentNode.parentNode.rowIndex);       // BUTTON -> TD -> TR.
 }
+
 // DropDown change need to enable and disable the button and text filed END
 //On Click send to configuration mode 2 page start //
 function genMode2URL(urlObject) {
     
+
     var strRowIndex = urlObject.parentNode.parentNode.rowIndex;
     var strValue = $("#textBoxPage" + strRowIndex).val();
     if (jQuery.trim(strValue).length > 0) {
@@ -377,7 +398,26 @@ function genMode2URL(urlObject) {
 }
 
 //On Click send to configuration mode 2 page END//
+//On Click send to create page tool start //
+function genPageConfi(urlObject) {
+    
 
+    var strRowIndex = urlObject.parentNode.parentNode.rowIndex;
+    var strValue = $("#textBoxPage" + strRowIndex).val();
+    if (jQuery.trim(strValue).length > 0) {
+        var url = '../tools/LearningGuideGenerator.html?page=' + strValue;
+        window.open(url, '_blank');
+    }
+    else {
+        alert("Please provide the page name first");
+
+    } 
+
+
+}
+
+
+//On Click send to create page tool END //
 //Fucnation to add values in the drop down start 
 function dropDown(element) {
 
