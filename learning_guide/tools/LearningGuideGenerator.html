@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Untitled Page</title>
+    <title>Add Content Page</title>
 
     <link rel="stylesheet" href="../res/css/TabGenerator.css">
-  
+    <script src="../res/js/comon.js"></script>
  
     <script type="text/javascript">
 
         var intTextBox = 0;
-
+       var varConf = getParameterByName('page');
         function addElement() {
             intTextBox++;
             var objNewDiv = document.createElement('div');
@@ -71,8 +71,8 @@
             var textToSaveAsBlob = new Blob([textToSave], { type: "text/html" });
             var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
             // var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
-            var fileNameToSaveAs = '01.html'
-
+            //var fileNameToSaveAs = '01.html'
+            var fileNameToSaveAs = varConf + '.html';
             if (window.navigator && window.navigator.msSaveOrOpenBlob) {
                 window.navigator.msSaveOrOpenBlob(textToSaveAsBlob, fileNameToSaveAs);
             } else {
